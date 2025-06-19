@@ -61,7 +61,7 @@ header {
   padding: 15px;
 }
 
-.inner-products {
+.inner-landing {
   position: absolute;
   top: 10px;
   left: 345px;
@@ -73,7 +73,7 @@ header {
 .inner-contact {
   position: absolute;
   top: 10px;
-  left: 470px;
+  left: 508px;
   background: #00acc1;
   color: white;
   padding: 15px;
@@ -113,6 +113,18 @@ header {
   transform: scale(1.05);
 }
 
+.project-card:first-child {
+  background-color: #ffcc00;
+  color: black;
+}
+  .project-card:last-child {
+  background-color: #d420d4;
+  color: black;
+}
+.project-card:nth-child(2) {
+  background-color: #51b716;
+  color: black;
+}
 section {
   background-color: #ffffff;
   padding: 10px;     /* space inside the box */
@@ -125,7 +137,10 @@ h1 {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+
+  animation: fadeIn 1s ease-in-out forwards;
 }
+
 /* delete if require */
 .grid-container {
   display: grid;
@@ -155,4 +170,46 @@ h1 {
   padding: 20px;
   text-align: center;
 }
+/* START CONTACT FORM CODES */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin-top: 20px;
+}
 
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #005fa3;
+}
+/* END CONTACT FORM CODES */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

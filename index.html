@@ -5,7 +5,72 @@
 <title>Imran Ahmed – Portfolio</title>
   <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style>
+  /* Start Animation codes */
+  @keyframes fadeInNav {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
+  .inner-home,
+  .inner-about-us,
+  .inner-gallary,
+  .inner-landing,
+  .inner-contact {
+    opacity: 0;
+    animation: fadeInNav 0.8s ease-in-out forwards;
+  }
+
+  .inner-home {
+    animation-delay: 0.2s;
+  }
+  .inner-about-us {
+    animation-delay: 0.4s;
+  }
+  .inner-gallary {
+    animation-delay: 0.6s;
+  }
+  .inner-landing {
+    animation-delay: 0.8s;
+  }
+  .inner-contact {
+    animation-delay: 1s;
+  }
+  
+
+  @keyframes fadeInCard {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .project-card {
+    opacity: 0;
+    animation: fadeInCard 0.8s ease-in-out forwards;
+  }
+
+  .project-card:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  .project-card:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  .project-card:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+</style>
+/* End Animation codes */
 </head>
 <body>
   <header class="fixed-header">
@@ -19,7 +84,7 @@
      <a href="https://www.google.co.in/"><div class="inner-home">Home</div></a>
      <a href="https://www.google.co.in/"><div class="inner-about-us">About Us</div></a>
      <a href="https://www.google.co.in/"><div class="inner-gallary">Gallary</div></a>
-     <a href="https://www.google.co.in/"><div class="inner-products">Products</div></a>
+     <a href="/landing.html"><div class="inner-landing">Landing Page</div></a>
      <a href="https://www.google.co.in/"><div class="inner-contact">Contact</div></a>
   </div>
 
@@ -47,6 +112,12 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: imran27386@gmail.com</p>
+    <form class="contact-form">
+  <input type="text" placeholder="Your Name" required>
+  <input type="email" placeholder="Your Email" required>
+  <textarea placeholder="Your Message" rows="4"></textarea>
+  <button type="submit">Send Message</button>
+</form>
   </section>
 
 <div class="grid-container">
