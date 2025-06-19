@@ -1,9 +1,9 @@
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 40px;
   background-color: rgb(210, 210, 210);
   color: #333;
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 header {
@@ -11,59 +11,83 @@ header {
   background-color: rgb(100, 125, 200);
   color:rgb(255, 255, 255);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 6px;
+}
+
+.fixed-header {
+  /* position: fixed; */
+  /* top: 10; */
+  width: 98%;
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+.outer {
+  position: absolute;
+  height: 45px;
+  width: 88%;
+  left: 5.7%;
+  background: #e0f7fa;
+  border: 1px solid #0077cc;
+  border-radius: 6px;
+}
+
+.inner-home{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #00acc1;
+  color: white;
+  padding: 15px;
+  
+}
+
+.inner-about-us {
+  position: absolute;
+  top: 10px;
+  left: 110px;
+  background: #00acc1;
+  color: white;
+  padding: 15px;
+}
+
+.inner-gallary {
+  position: absolute;
+  top: 10px;
+  left: 235px;
+  background: #00acc1;
+  color: white;
+  padding: 15px;
+}
+
+.inner-products {
+  position: absolute;
+  top: 10px;
+  left: 345px;
+  background: #00acc1;
+  color: white;
+  padding: 15px;
+}
+
+.inner-contact {
+  position: absolute;
+  top: 10px;
+  left: 470px;
+  background: #00acc1;
+  color: white;
+  padding: 15px;
 }
 
 #about {
-  background-color: rgba(100, 125, 200, .3);
-  padding: 20px;
+  background-color: rgba(239, 10, 10, 0.65);
+  padding: 50px;
   margin: 20px 0;
   border-radius: 8px;
   text-align: left;
-}
-section {
-  background-color: #ffffff;
-  padding: 10px;     /* space inside the box */
-  margin: 01px 0;    /* space outside the box */
-  border: 3px solid #0077cc;
-}
-h1 {
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
   
 }
-.box1 {
-  display: block;
-  background: #ccc;
-  padding: 20px;
-}
 
-.box2 {
-  display: inline;
-  background: yellow;
-  width: 500px;
-  height: 70px;
-  padding: 50;
-}
-
-.box3 {
-  display: inline-block;
-  background: orange;
-  width: 130px;
-  height: 70px;
-}
-.container {
-  display: flex;
-  gap: 20px;
-}
-
-.container div {
-  background: #f5f5f5;
-  padding: 20px;
-  flex: 1;
-}
 .project-container {
   display: flex;
   justify-content: space-between; /* space between cards */
@@ -79,4 +103,56 @@ h1 {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
 }
+
+.project-card:hover {
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+section {
+  background-color: #ffffff;
+  padding: 10px;     /* space inside the box */
+  margin: 10px 0;    /* space outside the box */
+  border: 2px solid #0077cc;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* delete if require */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+/* delete if require */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.grid-card {
+  background: #444;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
