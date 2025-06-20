@@ -46,7 +46,7 @@ header {
 .inner-about-us {
   position: absolute;
   top: 10px;
-  left: 110px;
+  left: 112px;
   background: #00acc1;
   color: white;
   padding: 15px;
@@ -55,7 +55,7 @@ header {
 .inner-gallary {
   position: absolute;
   top: 10px;
-  left: 235px;
+  left: 305px;
   background: #00acc1;
   color: white;
   padding: 15px;
@@ -64,7 +64,7 @@ header {
 .inner-landing {
   position: absolute;
   top: 10px;
-  left: 345px;
+  left: 410px;
   background: #00acc1;
   color: white;
   padding: 15px;
@@ -73,7 +73,7 @@ header {
 .inner-contact {
   position: absolute;
   top: 10px;
-  left: 508px;
+  left: 575px;
   background: #00acc1;
   color: white;
   padding: 15px;
